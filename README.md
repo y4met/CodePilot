@@ -210,10 +210,3 @@ class Calculator(Tool):
         except Exception as e:
             return f"Error: {e}"
 ```
-
----
-
-## 9. 技术选型说明
-
-- **未直接使用 LangChain**，而是手写一个精简 ReAct 循环。原因：课程目标是理解 Agent 本质（推理-行动-观察循环），手写实现能清晰看到 Prompt 协议、解析与调度逻辑；同时避免框架版本变动带来的不稳定性。LLM 层采用 OpenAI SDK，与 LangChain 的 `Tool` / `AgentExecutor` 概念一一对应，后续可平滑迁移。
-- **依赖极小**（仅 `openai` + `python-dotenv`），核心逻辑零第三方框架，可读性高。
