@@ -1,0 +1,4 @@
+# 代码助手 Agent 依赖
+# 仅依赖 OpenAI 兼容 SDK 与环境变量加载，可对接 OpenAI / DeepSeek / Kimi / 通义千问 等任意兼容服务
+openai>=1.0.0
+python-dotenv>=1.0.0

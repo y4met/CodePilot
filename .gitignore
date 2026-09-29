@@ -1,0 +1,15 @@
+# 虚拟环境
+.venv/
+venv/
+
+# 环境变量（含密钥，不提交）
+.env
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
