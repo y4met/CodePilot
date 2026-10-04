@@ -159,8 +159,6 @@ REPL 中：
 | `read_file` | `path: str` | 读取工作区内文本文件 | 路径 resolve 后校验必须位于 workspace 内，防 `../` 逃逸 |
 | `search_code` | `query: str`, `file_ext?: str` | 正则/子串搜索代码 | 忽略 `.git/__pycache__` 等目录，结果上限 30 条 |
 
-> ⚠️ `run_python` 使用子进程隔离，适合课程/演示；生产环境应换 Docker / Firecracker 等强沙箱。
-
 ---
 
 ## 6. 配置项（.env）
